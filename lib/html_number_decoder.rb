@@ -14,6 +14,6 @@ module HtmlNumberDecoder
 
   def self.convert(html_number)
     number = html_number[/\d+/]
-    MAPPING[number]
+    MAPPING[number] || ""
   end
 end
