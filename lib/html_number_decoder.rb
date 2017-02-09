@@ -4,6 +4,8 @@ module HtmlNumberDecoder
   PATTERN = /(&#(\d+);)/
 
   def self.decode(string)
+    return unless string.is_a? String
+
     next_index = string.index(PATTERN)
     return string if next_index.nil?
 
