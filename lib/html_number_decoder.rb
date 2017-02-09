@@ -12,7 +12,7 @@ class HtmlNumberDecoder
       decode(string[(next_index + $1.length)..-1])
   end
 
-  def convert(html_number)
+  def self.convert(html_number)
     number = html_number[/\d+/]
     MAPPING[number]
   end
