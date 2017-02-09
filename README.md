@@ -13,6 +13,8 @@ gem install html_number_decoder
 ## Usage
 
 ```ruby
+require "html_number_decoder"
+
 string = "how&#39;s it going pal&#63;"
 HtmlNumberDecoder.decode(string) #=> "how's it going pal?"
 ```
