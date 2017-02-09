@@ -1,6 +1,6 @@
 require "html_number_decoder/mapping"
 
-class HtmlNumberDecoder
+module HtmlNumberDecoder
   PATTERN = /(&#(\d+);)/
 
   def self.decode(string)
